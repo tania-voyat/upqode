@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
     <script src="https://use.fontawesome.com/56a0d82bac.js"></script>
     <title>Test task</title>
   </head>
@@ -41,14 +45,54 @@
           <div class="burger"></div>
         </div>
       </nav>
-      <div>
+    </header>
+
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <iframe
+              id="player1"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/IUN664s7N-c?rel=0&autoplay=1&enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&start=0&mute=1&modestbranding=1&disablekb=1&hd=1"
+              frameborder="0"
+              allowfullscreen
+              allow="autoplay"
+            ></iframe>
+          </li>
+          <li class="splide__slide">
+            <iframe
+              id="player2"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/6lt2JfJdGSY?autoplay=1&controls=0&disablekb=1&enablejsapi=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&start=0&mute=1&rel=0&showinfo=0&hd=1"
+              frameborder="0"
+              allowfullscreen
+              allow="autoplay"
+            ></iframe>
+          </li>
+          <li class="splide__slide">
+            <iframe
+              id="player3"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/ACFa78c30HQ?enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&start=0&autoplay=1&mute=1&modestbranding=1&disablekb=1&hd=1"
+              frameborder="0"
+              allowfullscreen
+              allow="autoplay"
+            ></iframe>
+          </li>
+        </ul>
+      </div>
+      <div class="slider__text">
         <h5 class="heading">Mileage Made Simple</h5>
         <p class="sub-heading">
           Motivation And Your Personal Vision An Unbeatable Force
         </p>
         <button class="button">Start Free Trial</button>
       </div>
-    </header>
+    </div>
     <section id="services"></section>
     <section id="team"></section>
     <section id="contact" class="wrapper">
@@ -95,17 +139,6 @@
       </div>
 
       <div id="map"></div>
-      <!-- <div class="info-window">
-        <h5>New York</h5>
-        <p>2005 Stokes Isle Apt. 896, New York 10010</p>
-        <span class="icon-clock"></span>
-        <h6>Work Schedule</h6>
-        <p>Mon - Sat: 11:00-19:00, Sun:11:00-16:00,</p>
-        <h6>Head Office</h6>
-        <p>(0043) 568 456 902 (0043) 568 456 902</p>
-        <h6>Head Office</h6>
-        <p>hello@pad.architecture support@pad.architecture</p>
-      </div> -->
     </section>
     <footer class="footer">
       <nav class="navigation">

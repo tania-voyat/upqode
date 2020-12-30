@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.11.1",
+    "@splidejs/splide": "^2.4.21",
     "core-js": "^3.6.5",
     "css": "^3.0.0",
     "handlebars": "^4.7.6",

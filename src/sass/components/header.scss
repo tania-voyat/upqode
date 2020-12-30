@@ -1,38 +1,66 @@
-.header {
-  background: linear-gradient(
-      180deg,
-      rgba(5, 13, 29, 0.6) 11.29%,
-      rgba(5, 13, 29, 0) 90.3%
-    ),
-    url('./images/Bitmap.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 140px;
+  text-align: left;
+  z-index: 1;
+}
+
+.splide {
+  position: relative;
   width: 100%;
   height: 100vh;
   margin-bottom: 190px;
-  padding: 26px 90px 80px;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 13, 29, 0.6) 11.29%,
+    rgba(5, 13, 29, 0) 90.3%
+  );
 }
-// .header__wrapper {
-//   margin: 0 90px 80px;
-// }
+.splide__slide {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.7;
+}
 
+iframe {
+  position: relative;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slider__text {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+}
 .site-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 80px;
+  z-index: 2;
 }
 
 .logo {
   font-size: 28px;
-  font-family: 'Poppins';
+  font-family: $primary-font-family;
   font-weight: 700;
   position: relative;
   margin: 0;
 }
 .logo a {
-  color: #ffffff;
+  color: $primary-white-color;
   text-decoration: none;
 }
 .logo__img {
@@ -52,7 +80,7 @@
   right: 0;
   width: 100px;
   height: 300px;
-  background-color: #222222;
+  background-color: $primary-dark-color;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -66,19 +94,19 @@
 }
 .menu__item {
   font-size: 14px;
-  font-family: 'Poppins';
+  font-family: $primary-font-family;
   font-weight: 600;
 }
 .menu__item a {
   text-decoration: none;
-  color: #ffffff;
+  color: $primary-white-color;
 
   &:hover {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid $primary-white-color;
   }
 }
 .active {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid $primary-white-color;
 }
 .menu-toggle {
   position: relative;
@@ -95,7 +123,7 @@
 .burger {
   width: 2.4rem;
   height: 3px;
-  background-color: #ffffff;
+  background-color: $primary-white-color;
   border-radius: 2px;
   border: none;
   transition: all 0.7s ease-out;
@@ -107,7 +135,7 @@
   position: absolute;
   width: 2.4rem;
   height: 3px;
-  background-color: #ffffff;
+  background-color: $primary-white-color;
   border-radius: 2px;
   border: none;
 }
@@ -134,37 +162,37 @@
 }
 
 .heading {
-  font-family: 'Poppins';
+  font-family: $primary-font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 90px;
-  color: #ffffff;
+  color: $primary-white-color;
   text-align: center;
   line-height: 100px;
   margin: 0;
 }
 .sub-heading {
-  font-family: 'Poppins';
+  font-family: $primary-font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 0.2px;
-  color: #ffffff;
+  color: $primary-white-color;
   text-align: center;
 }
 .button {
   height: 54px;
   width: 172px;
   padding: 16px 23px;
-  background: #00a031;
+  background: $primary-accent-color;
   border: none;
   border-radius: 27px;
   font-family: 'Gilroy Extrabold';
   font-size: 18px;
   text-align: center;
   letter-spacing: 0.1px;
-  color: #f4fbf6;
+  color: $secondary-light-color;
   cursor: pointer;
   display: block;
   margin: 0 auto;
