@@ -2,10 +2,10 @@
 Published at https://tania-voyat.github.io/upqode/
 
 ### Technologies been used:
-HTML5/CSS3
-SASS
+HTML5/CSS3,
+SASS,
 JavaScript
 
 ### Utilities been used:
-Webpack
+Webpack,
 Google Maps API
